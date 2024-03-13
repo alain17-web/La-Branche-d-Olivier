@@ -6,9 +6,34 @@
         <%- include('./partials/nav.ejs') %>
             <div class="menu">
                 <h2>Menu</h2>
+                <div class="container">
+                    <% if(dishes.length> 0){ %>
+                        <% dishes.forEach(dish=> { %>
+                            <div class="dishCard">
+                                <a href="/menu/details/<%= dish.id %>">
+                                    <img src="/img/thumbnails/<%= dish.thumb %>" alt="<%= dish.name %>">
+                                </a>
+
+                                <h3 class="name">
+                                    <%= dish.name %>
+                                </h3>
+                                <div class="dishDesc">
+                                    <p>
+                                        <%= dish.smDesc %>
+                                    </p>
+                                    <p class="price">
+                                        <%= dish.price %>
+                                    </p>
+                                </div>
+                            </div>
+                            <% }) %>
+                                <% } else { %>
+                                    <p>Ce plat est momentanément indisponible...</p>
+                                    <% } %>
+                </div>
             </div>
 
-        <%- include('./partials/footer.ejs') %>
+            <%- include('./partials/footer.ejs') %>
     </body>
 
 </html>

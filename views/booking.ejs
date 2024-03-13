@@ -7,6 +7,36 @@
 
     <div class="booking">
         <h2>Réserver</h2>
+        <form action="/booking" method="POST">
+            <label for="name">Nom</label>
+            <input type="text" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="name">
+
+            <label for="phone">Téléphone</label>
+            <input type="text" name="phone" required>
+
+            <label for="date">Date</label>
+            <input type="date" name="date" required>
+
+            <label for="time">Heure</label>
+            <select name="time" required>
+                <option value="18h">18h</option>
+                <option value="18h30">18h30</option>
+                <option value="19h">19h</option>
+                <option value="19h30">19h30</option>
+                <option value="20h">20h</option>
+                <option value="20h30">20h30</option>
+                <option value="21h">21h</option>
+                <option value="21h30">21h30</option>
+            </select>
+
+            <label for="nbr_pax">Nombre de personnes</label>
+            <input type="text" name="nbr_pax" required>
+
+            <button type="submit">Réserver</button>
+        </form>
     </div>
 
     <%- include('./partials/footer.ejs') %>

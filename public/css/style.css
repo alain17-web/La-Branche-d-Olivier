@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-----nav.ejs------------*/
+
+nav {
+    background-color: olive;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.logoDiv {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 30%;
+
+}
+
+.logo {
+    background: antiquewhite;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    margin-right: 8px;
+}
+
+.logoTitle {
+    color: burlywood;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+}
+
+nav li {
+
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+nav a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rebeccapurple;
+}
+
+/*-----footer.ejs--------*/
+
+footer {
+    background-color: olive;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.infos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.location {
+    color: antiquewhite;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.location a {
+    color: rebeccapurple;
+    cursor: pointer;
+}
+
+.hours p {
+    font-size: 28px;
+    font-weight: 700;
+    font-style: italic;
+    color: burlywood;
+    padding-top: 40px;
+}
+
+.copywright {
+    text-align: center;
+}
+
+/*------home.ejs---------*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.homepage {
+    height: 100vh;
+
+}
+
+.hero {
+    height: 33vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('/img/oliveTrees.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.welcome{
+    color: black;
+    width: 45%;
+}
+
+.welcome h2{
+    margin-left: 40%;
+    margin-top: 100px;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.welcome h4{
+    margin-left: 40%;
+    font-size: 22px;
+}
+
+.welcome p{
+    margin-left: 10%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.3em;
+}
+
+.foodImg img{
+    padding-top: 60px;
+    width:500px;
+}
+
+/*-----menu.ejs---------*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu h2{
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    gap: 10px;
+}
+
+.dishCard{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    height: fit-content;
+    
+}
+
+.dishCard img{
+    width: 130px;
+    height: 130px;
+}
+
+.dishDesc{
+    width: 80%;
+    font-size: 16px;
+}
+
+.dishDesc p{
+    text-align: center;
+}
+
