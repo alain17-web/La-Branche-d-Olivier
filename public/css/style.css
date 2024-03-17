@@ -128,6 +128,8 @@ body {
     background-size: cover;
 }
 
+
+
 .main{
     display: flex;
     justify-content: space-around;
@@ -338,4 +340,72 @@ hr{
     font-weight: 800;
 }
 
+/*------booking.ejs-------*/
+.booking{
+    padding-top: 70px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking h2{
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 50px;
+}
+
+form{
+    display: flex;
+    width: 50%;
+    padding: 25px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    vertical-align: middle;
+    margin: 80px auto;
+    background-color: blanchedalmond;
+    
+}
+
+
+.nom,.email,.tel,.date,.hour,.pax{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+    align-items: start;
+    
+} 
+
+label{
+    font-style: oblique;
+}
+
+input{
+    height: 30px;
+    width: 100%;
+    background-color: white;
+    border: none;
+   
+}
+
+
+.required{
+    color: red;
+}
+
+button{
+    text-align: center;
+    background-color: teal;
+    color: white;
+    padding: 12px;
+    width: 35%;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
 

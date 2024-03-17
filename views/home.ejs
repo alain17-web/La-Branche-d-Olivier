@@ -23,6 +23,21 @@
                 </div>
             </div>
             <%- include('./partials/footer.ejs') %>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    // Get the query parameter 'message' from the URL
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const responseMsg = urlParams.get('message');
+        
+                    // Check if responseMessage exists and is not empty
+                    if (responseMsg) {
+                        // Display the response message in the div.hero element
+                        const heroDiv = document.querySelector('.hero');
+                        heroDiv.textContent = alert(decodeURIComponent(responseMsg)); // Decode the response message
+                    }
+                });
+            </script>
     </body>
 
 </html>
