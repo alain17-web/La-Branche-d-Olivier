@@ -283,3 +283,39 @@ hr{
 .soft ul li{
     text-align: center;
 }
+
+/*------details.ejs-----------*/ 
+
+.details{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.details img{
+    margin-top: 25px;
+    width: 500px;
+    height: 500px;
+}
+
+.price{
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.safe{
+    color: green;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.danger{
+    color: red;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+

@@ -8,8 +8,12 @@
                 <img src="/img/<%= dish.img %>" alt="<%= dish.name %>">
                 <h2><%= dish.name %></h2>
                 <p><%= dish.desc %></p>
-                <p><%= dish.price %></p>
-                <p><%= dish.allergy %></p>
+                <p class="price"><%= dish.price %></p>
+                <%if(dish.allergy === "ne contient pas d'allergènes") {  %>
+                <p class="safe"><%= dish.allergy %></p>
+                <%} else {%>
+                    <p class="danger"><%= dish.allergy %></p>
+                <%}%>
             </div>
 
         <%- include('./partials/footer.ejs') %>
