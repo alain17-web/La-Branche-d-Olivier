@@ -113,7 +113,7 @@
     {
         "id": 9,
         "name": "Assiette artichauts",
-        "cat": "Assiettes froides",
+        "cat": "Mezzés froids",
         "price": "17,5€",
         "allergy": "peut contenir des allergènes",
         "img": "artichauts.jpg",
@@ -153,6 +153,71 @@
         "thumb": "thumb.namoura.jpg",
         "smDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, illo ipsum dolor sit amet.",
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, illo.Lorem ipsum dolor sit amet consectetur adipisicing elit. A, illo.Lorem ipsum dolor sit amet consectetur adipisicing elit. A, illo.Lorem ipsum dolor sit amet consectetur adipisicing elit. A, illo.Lorem ipsum dolor sit amet consectetur adipisicing elit. A, illo."
+    },
+    {
+        "id": 13,
+        "name": "Thé à la menthe",
+        "cat": "Boissons chaudes",
+        "price": "2,5€",
+        "allergy": "ne contient pas d'allergènes"
+    },
+    {
+        "id": 14,
+        "name": "Thé sauge",
+        "cat": "Boissons chaudes",
+        "price": "2,2€",
+        "allergy": "ne contient pas d'allergènes"
+    },
+    {
+        "id": 15,
+        "name": "Café",
+        "cat": "Boissons chaudes",
+        "price": "2,5€",
+        "allergy": "ne contient pas d'allergènes"
+    },
+    
+    {
+        "id": 16,
+        "name": "Vin de Galilée",
+        "cat": "alcohol",
+        "price": "18,8€",
+        "allergy": "ne contient pas d'allergènes"
+    },
+    {
+        "id": 17,
+        "name": "Bière de Latrun",
+        "cat": "alcohol",
+        "price": "2,4€",
+        "allergy": "ne contient pas d'allergènes"
+    },
+    {
+        "id": 18,
+        "name": "Bière de Nazareth",
+        "cat": "alcohol",
+        "price": "1,8€",
+        "allergy": "ne contient pas d'allergènes"
+    },
+    {
+        "id": 19,
+        "name": "Ice Tea",
+        "cat": "soft",
+        "price": "1,8€",
+        "allergy": "ne contient pas d'allergènes"
+    },
+    {
+        "id": 20,
+        "name": "Coca",
+        "cat": "soft",
+        "price": "1,8€",
+        "allergy": "ne contient pas d'allergènes"
+    },
+    {
+        "id": 21,
+        "name": "Ayran",
+        "cat": "soft",
+        "price": "2€",
+        "allergy": "contient du lait fermenté"
     }
+    
    
 ]

@@ -12,6 +12,10 @@ nav {
     height: 70px;
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    z-index: 30;
 }
 
 .logoDiv {
@@ -69,6 +73,8 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+    height: 180px;
+    z-index:30;
 }
 
 .infos {
@@ -166,18 +172,32 @@ body {
     box-sizing: border-box;
 }
 
+.menuContainer{
+    padding-top: 70px;
+    padding-bottom: 180px;
+    overflow: auto;
+    z-index:10;
+}
+
 .menu h2{
     text-align: center;
     font-weight: 500;
     font-style: italic;
+    margin-bottom: 50px;
 }
 
-.container{
+.dishes{
     display: flex;
-    flex-wrap: wrap;
-    width: 90%;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
     margin: auto;
     gap: 10px;
+}
+
+hr{
+    width: 80%;
+    margin: 50px auto
 }
 
 .dishCard{
@@ -191,8 +211,8 @@ body {
 }
 
 .dishCard img{
-    width: 130px;
-    height: 130px;
+    width: 80px;
+    height: 80px;
 }
 
 .dishDesc{
@@ -204,3 +224,62 @@ body {
     text-align: center;
 }
 
+.drinks{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.drinks h2{
+    font-weight: 500;
+    font-style: italic;
+   text-align: center;
+}
+
+.hot{
+    flex:1;
+    
+}
+
+.hot ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.hot ul li{
+    text-align: center;
+}
+
+.alcohol{
+    flex:1;
+}
+
+.alcohol ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.alcohol ul li{
+    text-align: center;
+}
+
+.soft{
+    flex:1;
+}
+
+.soft ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.soft ul li{
+    text-align: center;
+}

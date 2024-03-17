@@ -4,35 +4,194 @@
 
     <body>
         <%- include('./partials/nav.ejs') %>
-            <div class="menu">
-                <h2>Menu</h2>
-                <div class="container">
-                    <% if(dishes.length> 0){ %>
-                        <% dishes.forEach(dish=> { %>
-                            <div class="dishCard">
-                                <a href="/menu/details/<%= dish.id %>">
-                                    <img src="/img/thumbnails/<%= dish.thumb %>" alt="<%= dish.name %>">
-                                </a>
+            <div class="menuContainer">
+                <div class="menu">
+                    <h2>Assiette Grillades</h2>
+                    <div class="dishes">
+                        <% if(dishes.length> 0){ %>
+                            <% dishes.forEach(dish=> { %>
+                                <% if(dish.cat==="Assiette Grillades" ){%>
+                                    <div class="dishCard">
 
-                                <h3 class="name">
-                                    <%= dish.name %>
-                                </h3>
-                                <div class="dishDesc">
-                                    <p>
-                                        <%= dish.smDesc %>
-                                    </p>
-                                    <p class="price">
-                                        <%= dish.price %>
-                                    </p>
-                                </div>
-                            </div>
-                            <% }) %>
-                                <% } else { %>
-                                    <p>Ce plat est momentanément indisponible...</p>
+                                        <a href="/menu/details/<%= dish.id %>">
+                                            <img src="/img/thumbnails/<%= dish.thumb %>" alt="<%= dish.name %>">
+                                        </a>
+
+                                        <h3 class="name">
+                                            <%= dish.name %>
+                                        </h3>
+                                        <div class="dishDesc">
+                                            <p>
+                                                <%= dish.smDesc %>
+                                            </p>
+                                            <p class="price">
+                                                <%= dish.price %>
+                                            </p>
+                                        </div>
+                                    </div>
                                     <% } %>
+                                        <% }) %>
+                                            <% } else { %>
+                                                <p>Ce plat est momentanément indisponible...</p>
+                                                <% } %>
+                    </div>
+                </div>
+                <hr>
+                <div class="menu">
+                    <h2>Mezzés Froids</h2>
+                    <div class="dishes">
+                        <% if(dishes.length> 0){ %>
+                            <% dishes.forEach(dish=> { %>
+                                <% if(dish.cat==="Mezzés froids" ){%>
+                                    <div class="dishCard">
+
+                                        <a href="/menu/details/<%= dish.id %>">
+                                            <img src="/img/thumbnails/<%= dish.thumb %>" alt="<%= dish.name %>">
+                                        </a>
+
+                                        <h3 class="name">
+                                            <%= dish.name %>
+                                        </h3>
+                                        <div class="dishDesc">
+                                            <p>
+                                                <%= dish.smDesc %>
+                                            </p>
+                                            <p class="price">
+                                                <%= dish.price %>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <% } %>
+                                        <% }) %>
+                                            <% } else { %>
+                                                <p>Ce plat est momentanément indisponible...</p>
+                                                <% } %>
+                    </div>
+                </div>
+                <hr>
+                <div class="menu">
+                    <h2>Plateaux découverte</h2>
+                    <div class="dishes">
+                        <% if(dishes.length> 0){ %>
+                            <% dishes.forEach(dish=> { %>
+                                <% if(dish.cat==="Plateaux découverte" ){%>
+                                    <div class="dishCard">
+
+                                        <a href="/menu/details/<%= dish.id %>">
+                                            <img src="/img/thumbnails/<%= dish.thumb %>" alt="<%= dish.name %>">
+                                        </a>
+
+                                        <h3 class="name">
+                                            <%= dish.name %>
+                                        </h3>
+                                        <div class="dishDesc">
+                                            <p>
+                                                <%= dish.smDesc %>
+                                            </p>
+                                            <p class="price">
+                                                <%= dish.price %>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <% } %>
+                                        <% }) %>
+                                            <% } else { %>
+                                                <p>Ce plat est momentanément indisponible...</p>
+                                                <% } %>
+                    </div>
+                </div>
+                <hr>
+                <div class="menu">
+                    <h2>Desserts</h2>
+                    <div class="dishes">
+                        <% if(dishes.length> 0){ %>
+                            <% dishes.forEach(dish=> { %>
+                                <% if(dish.cat==="Desserts" ){%>
+                                    <div class="dishCard">
+
+                                        <a href="/menu/details/<%= dish.id %>">
+                                            <img src="/img/thumbnails/<%= dish.thumb %>" alt="<%= dish.name %>">
+                                        </a>
+
+                                        <h3 class="name">
+                                            <%= dish.name %>
+                                        </h3>
+                                        <div class="dishDesc">
+                                            <p>
+                                                <%= dish.smDesc %>
+                                            </p>
+                                            <p class="price">
+                                                <%= dish.price %>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <% } %>
+                                        <% }) %>
+                                            <% } else { %>
+                                                <p>Ce plat est momentanément indisponible...</p>
+                                                <% } %>
+                    </div>
+                </div>
+                <hr>
+                <div class="drinks">
+
+                    <div class="hot">
+                        <h2>Boissons chaudes</h2>
+                        <%if(dishes.length> 0){ %>
+                            <% dishes.forEach(dish=> { %>
+                                <%if(dish.cat==="Boissons chaudes" ){%>
+
+                                    <ul>
+                                        <li>
+                                            <%=dish.name%> - <%=dish.price%>
+                                        </li>
+                                    </ul>
+                                    <%}%>
+                                        <% }) %>
+                                            <% } else { %>
+                                                <p>Cette boisson est momentanément indisponible...</p>
+                                                <% } %>
+                    </div>
+                    <div class="alcohol">
+                        <h2>Alcools</h2>
+                        <%if(dishes.length> 0){ %>
+                            <% dishes.forEach(dish=> { %>
+                                <%if(dish.cat==="alcohol" ){%>
+
+                                    <ul>
+                                        <li>
+                                            <%=dish.name%> - <%=dish.price%>
+                                        </li>
+                                    </ul>
+                                    <%}%>
+                                        <% }) %>
+                                            <% } else { %>
+                                                <p>Cette boisson est momentanément indisponible...</p>
+                                                <% } %>
+                    </div>
+                    <div class="soft">
+                        <h2>Softs</h2>
+                        <%if(dishes.length> 0){ %>
+                            <% dishes.forEach(dish=> { %>
+                                <%if(dish.cat==="soft" ){%>
+
+                                    <ul>
+                                        <li>
+                                            <%=dish.name%> - <%=dish.price%>
+                                        
+                                        </li>
+                                    </ul>
+                                    <%}%>
+                                        <% }) %>
+                                            <% } else { %>
+                                                <p>Cette boisson est momentanément indisponible...</p>
+                                                <% } %>
+                    </div>
                 </div>
             </div>
 
+
+            
             <%- include('./partials/footer.ejs') %>
     </body>
 
