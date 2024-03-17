@@ -7,7 +7,7 @@
             <div class="details">
                 <img src="/img/<%= dish.img %>" alt="<%= dish.name %>">
                 <h2><%= dish.name %></h2>
-                <p><%= dish.desc %></p>
+                <p class="desc"><%= dish.desc %></p>
                 <p class="price"><%= dish.price %></p>
                 <%if(dish.allergy === "ne contient pas d'allergènes") {  %>
                 <p class="safe"><%= dish.allergy %></p>
